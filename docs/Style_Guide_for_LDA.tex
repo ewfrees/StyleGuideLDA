@@ -84,7 +84,7 @@
   \postauthor{\par}
   \predate{\centering\large\emph}
   \postdate{\par}
-  \date{2018-07-22}
+  \date{2018-09-01}
 
 \usepackage{booktabs}
 \usepackage{hyperref}
@@ -266,44 +266,145 @@ references with one or two lines of annotation for each reference that
 the interested reader could follow up on (self-citations are okay!).
 Historical developments are particularly nice in this section.
 
-\section{Other Supporting Elements}\label{other-supporting-elements}
+\chapter{Interactive Book Features}\label{S:Interactive}
 
-\subsection{Exercises}\label{exercises}
+An advantage of publishing on the web is that we can produce an online
+version that contains many interactive objects such as quizzes, computer
+demonstrations, interactive graphs, video, and the like, to promote
+\textbf{deeper learning}.
+
+We want viewers to interact with the book; it is \textbf{not} written to
+accommodate the ``armchair reader,'' that is, one who passively reads
+and does not get involved by attempting the exercises in the text.
+Consider an analogy to sports; there is a great deal that you can learn
+about the game just by watching. However, if you want to sharpen your
+skills, then you have to go out and play the game.
+
+\section{Examples and Exercises}\label{examples-and-exercises}
+
+Even for traditional offline (pdf) version of the book, we include
+problems that allow readers to develop their learning.
+
+Each chapter contains several ``Examples'' or ``Exercises'' - these are
+focused problems that generally ask the reader to do a calculation or
+provide an interpretation of a statistical issue. We call them
+``examples'' when they appear in the main body of the text and
+``exercises'' when they appear at the end of the chapter. The need for
+hand calculations has been advocated by Khamis (1991)\footnote{``Manual
+  Computations---A Tool for Reinforcing Concepts and Techniques,'' H. J.
+  Khamis, Pages 294-299, \emph{The American Statistician}, Volume 45,
+  1991 - Issue 4}. Many teachers have found it useful to practice the
+mechanics in order to provide a solid foundation. With this foundation,
+we can get on to the real business; interpreting data using statistical
+principles.
 
 We anticipate that substantial exercise banks will be built over time by
 users, professional associations, and those with commercial interests.
-At this early stage of developing the chapter foundations, we recommend
-developing the following types of exercises. Exercises will be segmented
-by section (not subsection) and will be positioned at the end of each
-chapter.
+When developing the chapter foundations, think about the following types
+of problems.
 
 \begin{itemize}
 \tightlist
 \item
-  \textbf{Hand Calculation.} Similar to those appearing within the
-  chapter, include at the end of the chapter short
-  exercises/examples/special cases that can be readily solved by the
-  viewer.
+  \textbf{Hand Calculation.} These are problems that can be solved
+  without the use of a computer. They typically reinforce a statistical
+  or actuarial concept as well as highlight an issue that might be
+  encountered in practice. For this book, these problems often involve
+  algebraic and calculus manipulations. When writing these types of
+  problems, readers are more motivated if they understand \emph{why} the
+  problem is important. What actuarial issue is being addressed? What
+  statistical concept is being practiced? Often, a simple line or two
+  prefacing a problem can help substantially in this regard.
 \item
-  \textbf{Software.} Include exercises that ask the viewer to work with
-  ``R'' software, such as calculating a function or reproducing a graph.
+  \textbf{Software.} These are problems that ask the reader to work with
+  \texttt{R} software, such as calculating a function or reproducing a
+  graph.
 \item
-  \textbf{Data.} The need for working with real data is well documented;
-  for example, see Hogg (1972), Moore and Roberts (1989) or Singer and
+  \textbf{Data.} These are problems that ask the reader to work with
+  data. The need for working with real data is well documented; for
+  example, see Hogg (1972), Moore and Roberts (1989) or Singer and
   Willett (1990). By providing detailed guided tutorials that work with
-  theory and data, we teach our students the essence of Loss Data
-  Analtyics. Of course, there are some important disadvantages to
+  theory and data, we teach our students the essence of \emph{Loss Data
+  Analytics}. Of course, there are some important disadvantages to
   working with real data. Data sets can quickly become outdated.
   Further, the ideal data set to illustrate a specific statistical issue
   is difficult to find. Data exercises are complex and can span several
   chapter sections as well as chapters.
 \end{itemize}
 
-\subsection{Additional Book Resources Supporting Each
+Examples and exercises are designed so that they illustrate a general
+analytics/statistical concept; they have the additional advantage in
+that they are often based on actuarial professional examinations and so
+provide readers with training for these assessment frameworks. Notably,
+\emph{in the online version of the book, the solutions to the examples
+and exercises are hidden to encourage readers to actively solve (or at
+least consider) prior to revealing a solution.}
+
+\section{Statistical Code}\label{statistical-code}
+
+However, the limitation of exercise and examples done by hand is that
+they give \textbf{little insight} as to how the general
+analytics/statistical concepts can be used in applications or why more
+extensive treatments beyond the foundations would be needed. To address
+these limitations, throughout we include illustrate statistical code
+with sample (but real) datasets. The statistical language used
+throughout is \texttt{R}. For two reasons, the \texttt{R} code is hidden
+in the online version but can be interactively revealed but clicking a
+button.
+
+\begin{itemize}
+\tightlist
+\item
+  First, we want to focus on the analytics/statistical concepts and do
+  not wish for readers to be distracted by software code that emphasizes
+  implementation, not concepts.
+\item
+  Second, not all readers will use \texttt{R} (there are many good
+  alternative software programs available) and we want the book to be
+  available to a broad readership.
+\end{itemize}
+
+Although we do not focus on developing \texttt{R} tutorials, we will
+provide guides and links to people who wish to learn \texttt{R}. Our
+focus is on teaching statistical methods and actuarial issues, not
+software. Over time, the project may also provide support for users of
+other software environments, such as Microsoft's Excel or Python.
+
+\section{Other Interactive Features}\label{other-interactive-features}
+
+A wonderful aspect of an online text is that we can readily incorporate
+other interactive features. In coming versions of the book, you can
+expect to see
+
+\begin{itemize}
+\tightlist
+\item
+  a glossary (hover the cursor over a technical word or phrase to reveal
+  a definition),
+\item
+  links to relevant applications of the basic concept, as well as
+\item
+  end of the section quizzes that provide ``low-level formative
+  assessments'' so that they reader can gauge his or her understanding
+  of the material.
+\end{itemize}
+
+Some of the support material associated with the book also emphasizes
+interactive aspects. For example, detailed \emph{R code} allows readers
+to learn complex statistical routines and provides sample code so that
+users can develop their own libraries of useful routines. Another site
+will feature \texttt{R-Shiny}, an interactive graphic tool that provides
+dynamic graphing features. The concept of active learning promotes one
+of the deeper learning goals set forth by some educational leaders: The
+ability to learn how to learn independently.
+
+\section{Additional Book Resources Supporting Each
 Chapter}\label{additional-book-resources-supporting-each-chapter}
 
-There will be several resources support the book that will appear
-outside of the chapter structure, including:
+We are hopeful that there will be several resources support the book
+that will appear outside of the chapter structure. Although not
+necessarily interactive, they will help develop users' learning. These
+include:
 
 \begin{itemize}
 \tightlist
@@ -325,14 +426,6 @@ outside of the chapter structure, including:
   many. As is common in textbooks, we will also provide a place for
   lists or tables of organized facts for learners.
 \end{itemize}
-
-\subsection{Software Support}\label{software-support}
-
-We do not focus on developing \texttt{R} tutorials but will provide
-guides and links to people who wish to learn \texttt{R}. Our focus is on
-teaching statistical methods and actuarial issues, not software. Over
-time, the project may also provide support for users of other software
-environments, such as Microsoft's Excel or Python.
 
 \chapter{\texorpdfstring{Samples of Writing in
 \texttt{R\ bookdown}}{Samples of Writing in R bookdown}}\label{S:SampleSection}
