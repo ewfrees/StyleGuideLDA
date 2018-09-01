@@ -66,34 +66,13 @@ Alyaa Nuval Binti Othman and Aisha Nuval Binti Othman.
 
 ```    
       
-
-      
 ### Further Reading and References
 
 Do not finish with a "preview of upcoming chapter"; finish instead with a "Further Reading and References." This consists of a series of references with one or two lines of annotation for each reference that the interested reader could follow up on (self-citations are okay!). Historical developments are particularly nice in this section. 
 
-## Other Supporting Elements
 
-### Exercises 
-We anticipate that substantial exercise banks will be built over time by users, professional associations, and those with commercial interests. At this early stage of developing the chapter foundations, we recommend developing the following types of exercises. Exercises will be segmented by section (not subsection) and will be positioned at the end of each chapter.
 
-- **Hand Calculation.** Similar to those appearing within the chapter, include at the end of the chapter short exercises/examples/special cases that can be readily solved by the viewer.
-- **Software.** Include exercises that ask the viewer to work with "R" software, such as calculating a function or reproducing a graph.
-- **Data.** The need for working with real data is well documented; for example, see Hogg (1972), Moore and Roberts (1989) or Singer and Willett (1990). By providing detailed guided tutorials that work with theory and data, we teach our students the essence of Loss Data Analtyics. Of course, there are some important disadvantages to working with real data. Data sets can quickly become outdated. Further, the ideal data set to illustrate a specific statistical issue is difficult to find. Data exercises are complex and can span several chapter sections as well as chapters.
 
-### Additional Book Resources Supporting Each Chapter
-
-There will be several resources support the book that will appear outside of the chapter structure, including:
-
-- **Case Studies and Historical Vignettes.** Similar to those appearing within the chapter, include short exercises/examples/special cases that can be readily solved by the viewer. These serve to reinforce concepts and provide benchmarks for understanding. Case studies can be used to emphasize different practices in different countries. Historical vignettes can be interesting in their own right and remind us all of the foundations of our discipline.
-- **Data.** We anticipate developing a library of data sets that can be used by instructors who wish to emphasize different areas of practice.
-- **Technical Supplements, Lists, and Tables.** The roles of technical supplements has already been described and there could be many. As is common in textbooks, we will also provide a place for lists or tables of organized facts for learners.
-
-### Software Support
-
-We do not focus on developing `R` tutorials but will provide guides and links to people who wish to learn `R`. Our focus is on teaching statistical methods and actuarial issues, not software. Over time, the project may also provide support for users of other software environments, such as Microsoft's Excel or Python.
-
-   
 
       
       
