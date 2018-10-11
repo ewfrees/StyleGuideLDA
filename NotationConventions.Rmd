@@ -1,6 +1,6 @@
 # Conventions for Notation  {#S:NotationConvention}
 
-*Chapter Preview*. **Loss Data Analytics** will serve as a bridge between actuarial problems and methods and widely accepted statistical concepts and tools. Thus, the notation should be consistent with standard usage employed in probability and mathematical statistics. See, for example, [@halperin1965recommended] for a description of one standard.
+*Chapter Preview*. *Loss Data Analytics* will serve as a bridge between actuarial problems and methods and widely accepted statistical concepts and tools. Thus, the notation should be consistent with standard usage employed in probability and mathematical statistics. See, for example, [@halperin1965recommended] for a description of one standard.
 
 
 ## General Conventions {#S:General}
@@ -45,23 +45,24 @@ Here is a list of commonly used statistical symbols and operators, including the
 
 $$
 \begin{array}{cl}  \hline
-I(\cdot) & \text{binary indicator operator (}I\text{). For example, }I(A) \text{ is one if an outcome in event} \\
+I(\cdot) & \text{binary indicator function (}I\text{). For example, }I(A) \text{ is one if an outcome in event} \\
 & \ \ \ \ \  A \text{ occurs and is 0 otherwise.} \\
 \Pr(\cdot) & \text{probability }(\backslash{\tt{Pr}}) \\
 \mathrm{E}(\cdot)  & {\text{expectation operator }} (\backslash{\tt{mathrm\{E\}}}). {\text{ For example, }} \mathrm{E}(X)=\mathrm{E}~X {\text{ is the }} \\
 & \ \ \ \ \ {\text{expected value of the random variable }}X,{\text{ commonly denoted by }}\mu. \\
-\mathrm{Var}(\cdot)  & \text{variance operator }(\backslash{\tt{mathrm\{Var\}}}). \text{For example, } \mathrm{Var}(X)=\mathrm{Var}~X\text{ is the} \\
+\mathrm{Var}(\cdot)  & \text{variance operator }(\backslash{\tt{mathrm\{Var\}}}). \text{ For example, } \mathrm{Var}(X)=\mathrm{Var}~X\text{ is the} \\
 & \ \ \ \ \  \text{ variance of the random variable } X, \text{commonly denoted by } \sigma^2. \\
-\mu_k = \mathrm{E}~X^k & \text{kth moment of the random variable X. For k=1, use }\mu = \mu_1. \\
+\mu_k = \mathrm{E}~X^k & \text{kth moment of the random variable X. For }k\text{=1, use }\mu = \mu_1. \\
 \mathrm{Cov}(\cdot,\cdot)  & \text{covariance operator } (\backslash{\tt{mathrm\{Cov\}}}).\text{ For example, } \\
 & \ \ \ \ \ \mathrm{Cov}(X,Y)=\mathrm{E}\left\{(X -\mathrm{E}~X)(Y-\mathrm{E}~Y)\right\}  =\mathrm{E}(XY) -(\mathrm{E}~X)(\mathrm{E}~Y)\\
 & \ \ \ \ \  \text{ is the covariance between random variables }X\text{ and }Y. \\
 \mathrm{E}(X | \cdot)  & \text{conditional expectation operator. For example, }\mathrm{E}(X |Y=y) \text{ is the}\\
-& \ \ \ \ \   \text{ conditional expected value of a random variable }X\text{ given that the random variable }Y\text{ equals y. }\\
+& \ \ \ \ \   \text{ conditional expected value of a random variable }X\text{ given that }\\
+& \ \ \ \ \   \text{ the random variable }Y\text{ equals y. }\\
 \Phi(\cdot) & \text{standard normal cumulative distribution function }(\backslash{\tt{Phi}})\\
 \phi(\cdot) & \text{standard normal probability density function }(\backslash{\tt{phi}})\\
 \sim & \text{means is distributed as }(\backslash{\tt{sim}}). \text{ For example, }X\sim F \text{ means that the } \\
-& \ \ \ \ \  \text{random variable } x \text{ has distribution function }F. \\
+& \ \ \ \ \  \text{random variable } X \text{ has distribution function }F. \\
 se(\hat{\beta}) & \text{standard error of the parameter estimate }\hat{\beta} ~ (\backslash{\tt{hat\{}}\backslash{\tt{beta\}}}), \text{ usually }\\
 & \ \ \ \ \  \text{ an estimate of the standard deviation of }\hat{\beta},\text{ which is }\sqrt{Var(\hat{\beta})}. \\
 H_0 &  \text{null hypothesis} \\
@@ -80,7 +81,7 @@ $$
 \begin{array}{cl}
 \hline
 \equiv & \text{identity, equivalence }(\backslash\tt{equiv}) \\
-a:=b   & \text{defines a in terms of }b \\
+a:=b   & \text{defines }a\text{ in terms of }b \\
 \implies     & \text{implies }(\backslash\tt{implies})\\
 \iff  & \text{if and only if }(\backslash\tt{iff})\\
 \to, \longrightarrow & \text{converges to }(\backslash\tt{to}, \backslash\tt{longrightarrow}) \\
