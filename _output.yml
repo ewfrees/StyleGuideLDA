@@ -4,6 +4,7 @@ bookdown::gitbook:
   #split_bib: TRUE
   config:
     toc:
+      collapse: section
       before: |
         <li><a href="./">A Style Guide for LDA</a></li>
       after: |

@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Style Guide for Loss Data Analytics</title>
+  <meta name="description" content="This is a style guide to help authors write chapters for Loss Data Analytics">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Style Guide for Loss Data Analytics" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a style guide to help authors write chapters for Loss Data Analytics" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Style Guide for Loss Data Analytics" />
+  
+  <meta name="twitter:description" content="This is a style guide to help authors write chapters for Loss Data Analytics" />
+  
+
+<meta name="author" content="An open text authored by the Actuarial Community">
+
+
+<meta name="date" content="2018-11-26">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="S-SampleSection.html">
+<link rel="next" href="S-NotationConvention.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Style Guide for LDA</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="chapter-structure.html"><a href="chapter-structure.html"><i class="fa fa-check"></i><b>1</b> Chapter Structure</a><ul>
+<li class="chapter" data-level="1.1" data-path="chapter-structure.html"><a href="chapter-structure.html#chapter-preview-and-learning-objectives"><i class="fa fa-check"></i><b>1.1</b> Chapter Preview and Learning Objectives</a></li>
+<li class="chapter" data-level="1.2" data-path="chapter-structure.html"><a href="chapter-structure.html#main-body"><i class="fa fa-check"></i><b>1.2</b> Main Body</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="chapter-structure.html"><a href="chapter-structure.html#what-to-include"><i class="fa fa-check"></i><b>1.2.1</b> What to Include</a></li>
+<li class="chapter" data-level="1.2.2" data-path="chapter-structure.html"><a href="chapter-structure.html#what-not-to-include"><i class="fa fa-check"></i><b>1.2.2</b> What Not to Include</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="chapter-structure.html"><a href="chapter-structure.html#technical-supplements"><i class="fa fa-check"></i><b>1.3</b> Technical Supplements</a></li>
+<li class="chapter" data-level="1.4" data-path="chapter-structure.html"><a href="chapter-structure.html#S:further-reading-and-resources"><i class="fa fa-check"></i><b>1.4</b> Contributors and Further Resources</a><ul>
+<li class="chapter" data-level="1.4.1" data-path="chapter-structure.html"><a href="chapter-structure.html#contributors"><i class="fa fa-check"></i><b>1.4.1</b> Contributors</a></li>
+<li class="chapter" data-level="1.4.2" data-path="chapter-structure.html"><a href="chapter-structure.html#further-reading-and-references"><i class="fa fa-check"></i><b>1.4.2</b> Further Reading and References</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="S-Interactive.html"><a href="S-Interactive.html"><i class="fa fa-check"></i><b>2</b> Interactive Book Features</a><ul>
+<li class="chapter" data-level="2.1" data-path="S-Interactive.html"><a href="S-Interactive.html#examples-and-exercises"><i class="fa fa-check"></i><b>2.1</b> Examples and Exercises</a></li>
+<li class="chapter" data-level="2.2" data-path="S-Interactive.html"><a href="S-Interactive.html#statistical-code"><i class="fa fa-check"></i><b>2.2</b> Statistical Code</a></li>
+<li class="chapter" data-level="2.3" data-path="S-Interactive.html"><a href="S-Interactive.html#other-interactive-features"><i class="fa fa-check"></i><b>2.3</b> Other Interactive Features</a></li>
+<li class="chapter" data-level="2.4" data-path="S-Interactive.html"><a href="S-Interactive.html#additional-book-resources-supporting-each-chapter"><i class="fa fa-check"></i><b>2.4</b> Additional Book Resources Supporting Each Chapter</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="S-SampleSection.html"><a href="S-SampleSection.html"><i class="fa fa-check"></i><b>3</b> Samples of Writing in <code>R bookdown</code></a><ul>
+<li class="chapter" data-level="3.1" data-path="S-SampleSection.html"><a href="S-SampleSection.html#S:SectionLabels"><i class="fa fa-check"></i><b>3.1</b> Section Labels and Learning Objectives</a></li>
+<li class="chapter" data-level="3.2" data-path="S-SampleSection.html"><a href="S-SampleSection.html#equation-references"><i class="fa fa-check"></i><b>3.2</b> Equation References</a></li>
+<li class="chapter" data-level="3.3" data-path="S-SampleSection.html"><a href="S-SampleSection.html#in-text-citations"><i class="fa fa-check"></i><b>3.3</b> In-text Citations</a></li>
+<li class="chapter" data-level="3.4" data-path="S-SampleSection.html"><a href="S-SampleSection.html#including-tables"><i class="fa fa-check"></i><b>3.4</b> Including Tables</a></li>
+<li class="chapter" data-level="3.5" data-path="S-SampleSection.html"><a href="S-SampleSection.html#including-figures"><i class="fa fa-check"></i><b>3.5</b> Including Figures</a><ul>
+<li class="chapter" data-level="3.5.1" data-path="S-SampleSection.html"><a href="S-SampleSection.html#figures-generated-by-r"><i class="fa fa-check"></i><b>3.5.1</b> Figures Generated by <code>R</code></a></li>
+<li class="chapter" data-level="3.5.2" data-path="S-SampleSection.html"><a href="S-SampleSection.html#figures-not-generated-by-r"><i class="fa fa-check"></i><b>3.5.2</b> Figures Not Generated by <code>R</code></a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="S-SampleSection.html"><a href="S-SampleSection.html#including-footnotes"><i class="fa fa-check"></i><b>3.6</b> Including Footnotes</a></li>
+<li class="chapter" data-level="3.7" data-path="S-SampleSection.html"><a href="S-SampleSection.html#S:Links"><i class="fa fa-check"></i><b>3.7</b> Useful Links</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html"><i class="fa fa-check"></i><b>4</b> Setting up a Glossary</a><ul>
+<li class="chapter" data-level="4.1" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#csv-file-setup"><i class="fa fa-check"></i><b>4.1</b> csv File Setup</a></li>
+<li class="chapter" data-level="4.2" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#terms-and-definitions-by-chapter"><i class="fa fa-check"></i><b>4.2</b> Terms and Definitions by Chapter</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#chapter-1-introduction-to-loss-data-analytics"><i class="fa fa-check"></i><b>4.2.1</b> Chapter 1 Introduction to Loss Data Analytics</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#terms-and-chapter-first-defined"><i class="fa fa-check"></i><b>4.3</b> Terms and Chapter First Defined</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="S-NotationConvention.html"><a href="S-NotationConvention.html"><i class="fa fa-check"></i><b>5</b> Conventions for Notation</a><ul>
+<li class="chapter" data-level="5.1" data-path="S-NotationConvention.html"><a href="S-NotationConvention.html#S:General"><i class="fa fa-check"></i><b>5.1</b> General Conventions</a></li>
+<li class="chapter" data-level="5.2" data-path="S-NotationConvention.html"><a href="S-NotationConvention.html#S:Abbreviations"><i class="fa fa-check"></i><b>5.2</b> Abbreviations</a></li>
+<li class="chapter" data-level="5.3" data-path="S-NotationConvention.html"><a href="S-NotationConvention.html#S:StatSymbols"><i class="fa fa-check"></i><b>5.3</b> Common Statistical Symbols and Operators</a></li>
+<li class="chapter" data-level="5.4" data-path="S-NotationConvention.html"><a href="S-NotationConvention.html#S:Symbols"><i class="fa fa-check"></i><b>5.4</b> Common Mathematical Symbols and Functions</a></li>
+<li class="chapter" data-level="5.5" data-path="S-NotationConvention.html"><a href="S-NotationConvention.html#further-readings"><i class="fa fa-check"></i><b>5.5</b> Further Readings</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/OpenActTexts/StyleGuideLDA" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Style Guide for Loss Data Analytics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="setting-up-a-glossary" class="section level1">
+<h1><span class="header-section-number">Chapter 4</span> Setting up a Glossary</h1>
+<hr />
+<p>In this chapter, you learn how to:</p>
+<ul>
+<li>Setup and read csv files into R</li>
+<li>List terms and definitions by chapter</li>
+<li>List terms by the chapter in which they are first defined</li>
+<li>Use GitHub receive feedback and allow collaboration</li>
+</ul>
+<hr />
+<p>A glossary can serve as a quick reference when the reader needs to recall a term’s definition or location within a book. This chapter can serve as a guide to setup a glossary in the <code>R Bookdown</code> environment. Please refer <a href="https://bookdown.org/yihui/bookdown/get-started.html">here</a> for a refresher on <code>R Bookdown</code> if necessary.</p>
+<div id="csv-file-setup" class="section level2">
+<h2><span class="header-section-number">4.1</span> csv File Setup</h2>
+<p>The following include instructions on how to setup a csv file and read it into R.</p>
+<ol style="list-style-type: decimal">
+<li>Setup an excel file with 3 columns: Term, Definition, Chapter first defined.</li>
+<li>We suggest using one excel file for all chapters for easy reference and sharing. However, you will have to save each chapter separately. Alternatively, you may use one excel file per chapter instead of having one central file then separating it.</li>
+<li>Save the Excel file as a csv file.</li>
+<li>Please note that if you make changes, do so in the Excel file not the csv file.</li>
+</ol>
+</div>
+<div id="terms-and-definitions-by-chapter" class="section level2">
+<h2><span class="header-section-number">4.2</span> Terms and Definitions by Chapter</h2>
+<p>This section describes how to create a list of important terms and their definitions listed according to the chapters in which they are found.</p>
+<p>We use an example from the glossary of Loss Data Analytics. First we display the list of terms and definitions for Chapter 1 of the book followed by the code used to generate it.</p>
+<div id="chapter-1-introduction-to-loss-data-analytics" class="section level3">
+<h3><span class="header-section-number">4.2.1</span> Chapter 1 Introduction to Loss Data Analytics</h3>
+<table style="width:86%;">
+<colgroup>
+<col width="41%" />
+<col width="44%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Term</th>
+<th align="center">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">loss adjustment expenses</td>
+<td align="center">Loss adjustment expenses are costs to the insurer that are directly attributable to settling a claims. For example, the cost of an adjuster is someone who assess the claim cost or a lawyer who becomes involve in settling an insurer’s legal obligation on a claim</td>
+</tr>
+<tr class="even">
+<td align="center">unallocated loss adjustment expenses</td>
+<td align="center">Unallocated loss adjustment expenses are costs that can only be indirectly attributed to claim settlement; for example, the cost of an office to support claims staff</td>
+</tr>
+<tr class="odd">
+<td align="center">allocated loss adjustment expenses</td>
+<td align="center">Allocated loss adjustment expenses, sometimes known by the acronym ALEA, are costs that can be directly attributed to settling a claim; for example, the cost of an adjuster</td>
+</tr>
+<tr class="even">
+<td align="center">indemnification</td>
+<td align="center">Indemnification is the compensation provided by the insurer.</td>
+</tr>
+<tr class="odd">
+<td align="center">insurance claim</td>
+<td align="center">An insurance claim is the compensation provided by the insurer for incurred hurt, loss, or damage that is covered by the policy.</td>
+</tr>
+<tr class="even">
+<td align="center">loss amount</td>
+<td align="center">The loss amount is the size of the loss incurred by the policyholder for incurred hurt, loss, or damage that is covered by the policy.</td>
+</tr>
+<tr class="odd">
+<td align="center">analytics</td>
+<td align="center">Analytics is the process of using data to make decisions.</td>
+</tr>
+<tr class="even">
+<td align="center">renters insurance</td>
+<td align="center">Renters insurance is an insurance policy that covers the contents of an apartment or house that you are renting.</td>
+</tr>
+<tr class="odd">
+<td align="center">homeowners insurance</td>
+<td align="center">Homeowners insurance is an insurance policy that covers the contents and property of a building that is owned by you or a friend.</td>
+</tr>
+<tr class="even">
+<td align="center">automobile insurance</td>
+<td align="center">An insurance policy that covers damage to your vehicle, damage to other vehicles in the accident, as well as medical expenses of those injured in the accident.</td>
+</tr>
+<tr class="odd">
+<td align="center">property insurance</td>
+<td align="center">Property insurance is a policy that protects the insured against loss or damage to real or personal property. The cause of loss might be fire, lightening, business interruption, loss of rents, glass breakage, tornado, windstorm, hail, water damage, explosion, riot, civil commotion, rain, or damage from aircraft or vehicles.</td>
+</tr>
+<tr class="even">
+<td align="center">nonlife insurance</td>
+<td align="center">Nonlife insurance is any type of insurance where payments are not based on the death (or survivorship) of a named insured. Examples include automobile, homeowners, and so on. Also known as property and casualty or general insurance.</td>
+</tr>
+<tr class="odd">
+<td align="center">casualty insurance</td>
+<td align="center">Causalty insurance is a form of liability insurance providing coverage for negligent acts and omissions. Examples include workers compensation, errors and omissions, fidelity, crime, glass, boiler, and various malpractice coverages.</td>
+</tr>
+<tr class="even">
+<td align="center">valuation date</td>
+<td align="center">A valuation date is the date at which a company summarizes its financial position, typically quarterly or annually.</td>
+</tr>
+<tr class="odd">
+<td align="center">underwriting</td>
+<td align="center">Underwriting is the process where the company makes a decision as to whether or not to take on a risk.</td>
+</tr>
+<tr class="even">
+<td align="center">ratemaking</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center">reinsurer</td>
+<td align="center">A reinsurer is an insurance company that offers insurance to an insurer.</td>
+</tr>
+<tr class="even">
+<td align="center">loss reserve</td>
+<td align="center">A loss reserve is an estimate of liability indicating the amount the insurer expects to pay for claims that have not yet been realized. This includes losses incurred but not yet reported (IBNR) and those claims that have been reported claims that haven’t been paid (known by the acronym RBNS for reported but not settled).</td>
+</tr>
+<tr class="odd">
+<td align="center">technical provisions</td>
+<td align="center">Technical provisions is another name for loss reserves.</td>
+</tr>
+<tr class="even">
+<td align="center">experience rating</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center">merit rating</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">risk classification</td>
+<td align="center">Risk classification is the process of grouping policyholders into categories, or classes, where each insured in the class has a risk profile that is similar to others in the class.</td>
+</tr>
+<tr class="odd">
+<td align="center">cream skimming</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">claims triage</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center">pure premium</td>
+<td align="center">Pure premium is the total severity divided by the number of claims. It does not include insurance company expenses, premium taxes, contingencies, nor an allowance for profits. Also called loss costs. Some definitions include allocated loss adjustment expenses (ALAE).</td>
+</tr>
+<tr class="even">
+<td align="center">loss cost</td>
+<td align="center">Loss cost is the total severity divided by the number of claims. It does not include insurance company expenses, premium taxes, contingencies, nor an allowance for profits. Also called pure premium. Some definitions include allocated loss adjustment expenses (ALAE).</td>
+</tr>
+<tr class="odd">
+<td align="center">rating variables</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">coinsurance</td>
+<td align="center">Coinsurance is an arrangement whereby the insured and insurer share the covered losses. Typically, a coinsurance parameter specified means that both parties receive a proportional share, e.g., 50%, of the loss.</td>
+</tr>
+<tr class="odd">
+<td align="center">deductible</td>
+<td align="center">A deductible is a parameter specified in the contract. Typically, losses below the deductible are paid by the policyholder whereas losses in excess of the deductible are the insurer’s responsibility (subject to policy limits and coninsurance).</td>
+</tr>
+<tr class="even">
+<td align="center">policy limit</td>
+<td align="center">A policy limit is the maximum value covered by a policy.</td>
+</tr>
+<tr class="odd">
+<td align="center">personal lines</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">dividend</td>
+<td align="center">A dividend is the refund of a portion of the premium paid by the insured from insurer surplus.</td>
+</tr>
+<tr class="odd">
+<td align="center">bonus</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">retrospective premiums</td>
+<td align="center">The process of determining the cost of an insurance policy based on the actual loss experience determined as an adjustment to the initial premium payment.</td>
+</tr>
+<tr class="odd">
+<td align="center">prospective premiums</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">claims adjustment</td>
+<td align="center">Claims adjustment is the process of determining coverage, legal liability, and settling claims.</td>
+</tr>
+<tr class="odd">
+<td align="center">Commercial line</td>
+<td align="center">Commercial line is insurance purchased by commercial ventures (businesses)</td>
+</tr>
+<tr class="even">
+<td align="center">line of business</td>
+<td align="center">A line of business is a classification of business written by insurers.</td>
+</tr>
+<tr class="odd">
+<td align="center">claims leakage</td>
+<td align="center">Claims leakage respresents money lost through claims management inefficiencies.</td>
+</tr>
+<tr class="even">
+<td align="center">fraud detection</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center">case reserve</td>
+<td align="center">A case reserve is an estimate of the insurer’s future liability made by the claims adjuster.</td>
+</tr>
+<tr class="even">
+<td align="center">adjuster</td>
+<td align="center">An adjuster is a person who investigates claims and recommends settlement options based on estimates of damage and insurance policies held.</td>
+</tr>
+<tr class="odd">
+<td align="center">life Insurance</td>
+<td align="center">Life insurance is a contract where the insurer promises to pay upon the death of an insured person. The person being paid is the beneficiary.</td>
+</tr>
+<tr class="even">
+<td align="center">capital allocation</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p>Here is the code used for producing the list of terms and definitions:</p>
+<pre><code>### Chapter 1 Introduction to Loss Data Analytics
+
+{r}
+library(pander)
+chapter1 &lt;- read.csv(&quot;~/R project/StyleGuideLDA/csv/Chapter1.csv&quot;, header=TRUE,
+                       na.strings=c(&quot;.&quot;), stringsAsFactors=FALSE)
+table1.1 &lt;- cbind(chapter1[, 1], chapter1[, 2])
+final.table1.1 &lt;- as.data.frame(table1.1)
+names(final.table1.1) &lt;- c(&quot;Term&quot;, &quot;Definition&quot;)
+pander(final.table1.1)
+</code></pre>
+</div>
+</div>
+<div id="terms-and-chapter-first-defined" class="section level2">
+<h2><span class="header-section-number">4.3</span> Terms and Chapter First Defined</h2>
+<p>This section describes how to create a list of terms by the chapter in which they are first defined. Certain terms are defined multiple times throughout the book, so this list can help the reader refer to the chapter in which a term is first used and defined. The terms listed here are sorted in alphabetical order.</p>
+<p>We use an example from the glossary of Loss Data Analytics. Here, we use Chapter 1 and Chapter 2 of the book. We display the list of terms by chapter first defined then show the code used to generate it.</p>
+<table style="width:78%;">
+<colgroup>
+<col width="45%" />
+<col width="31%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Term</th>
+<th align="center">Chapter first defined</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">adjuster</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">aggregate claims</td>
+<td align="center">2</td>
+</tr>
+<tr class="odd">
+<td align="center">allocated loss adjustment expenses</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">analytics</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">automobile insurance</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">Bernoulli distribution</td>
+<td align="center">2</td>
+</tr>
+<tr class="odd">
+<td align="center">Binomial distribution</td>
+<td align="center">2</td>
+</tr>
+<tr class="even">
+<td align="center">bonus</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">capital allocation</td>
+<td align="center">NA</td>
+</tr>
+<tr class="even">
+<td align="center">case reserve</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">casualty insurance</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">claims adjustment</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">claims leakage</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">claims triage</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">coinsurance</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">Commercial line</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">cream skimming</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">deductible</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">Distribution function F(x)</td>
+<td align="center">2</td>
+</tr>
+<tr class="even">
+<td align="center">dividend</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">experience rating</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">fraud detection</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">Frequency</td>
+<td align="center">2</td>
+</tr>
+<tr class="even">
+<td align="center">Gamma Distribution</td>
+<td align="center">2</td>
+</tr>
+<tr class="odd">
+<td align="center">homeowners insurance</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">indemnification</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">insurance claim</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">life Insurance</td>
+<td align="center">NA</td>
+</tr>
+<tr class="odd">
+<td align="center">line of business</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">loss adjustment expenses</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">loss amount</td>
+<td align="center">NA</td>
+</tr>
+<tr class="even">
+<td align="center">loss cost</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">loss reserve</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">Maximum Liklihood Estimator</td>
+<td align="center">2</td>
+</tr>
+<tr class="odd">
+<td align="center">merit rating</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">Mixture</td>
+<td align="center">2</td>
+</tr>
+<tr class="odd">
+<td align="center">Moment generating function</td>
+<td align="center">2</td>
+</tr>
+<tr class="even">
+<td align="center">Negative binomial</td>
+<td align="center">2</td>
+</tr>
+<tr class="odd">
+<td align="center">nonlife insurance</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">personal lines</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">Poisson</td>
+<td align="center">2</td>
+</tr>
+<tr class="even">
+<td align="center">policy limit</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">Probability generating function</td>
+<td align="center">2</td>
+</tr>
+<tr class="even">
+<td align="center">Probability mass function f(x)</td>
+<td align="center">2</td>
+</tr>
+<tr class="odd">
+<td align="center">property insurance</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">prospective premiums</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">pure premium</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">ratemaking</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">rating variables</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">reinsurer</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">renters insurance</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">retrospective premiums</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">risk classification</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">Severity</td>
+<td align="center">2</td>
+</tr>
+<tr class="odd">
+<td align="center">Survival function S(x)</td>
+<td align="center">2</td>
+</tr>
+<tr class="even">
+<td align="center">technical provisions</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">unallocated loss adjustment expenses</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">underwriting</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">valuation date</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">Zero Modifided Distribution</td>
+<td align="center">2</td>
+</tr>
+<tr class="odd">
+<td align="center">Zero Truncated Distribution</td>
+<td align="center">2</td>
+</tr>
+</tbody>
+</table>
+<p>Here is the code used for producing the list of terms by chapter first defined:</p>
+<pre><code>{r}
+# Chapter 1
+table2.1 &lt;- cbind(chapter1[, 1], chapter1[, 3])
+
+# Chapter 2
+table2.2 &lt;- cbind(chapter2[, 1], chapter2[, 3])
+
+# Concatenate tables
+table2 &lt;- rbind(table2.1, table2.2)
+
+# Sort alphabetically --&gt; do not change
+sort.table2 &lt;- table2[order(table2[,1]), ] 
+
+# Remove duplicates --&gt; do not change
+library(dplyr)
+final.table2 &lt;- as.data.frame(sort.table2)
+names(final.table2) &lt;- c(&quot;Term&quot;, &quot;Chapter first defined&quot;)
+
+# Generate table --&gt; do not change
+pander(distinct(final.table2, Term, .keep_all= TRUE))</code></pre>
+<p>Note that some lines of code say “do not change”. This is because theses lines of code apply to the final concatenated table which includes all the chapters. We need the concatenated table before we can sort all terms alphabetically and remove duplicates to generate the final table.</p>
+<p>Creating GitHub for collaboration - refer to HappyGit</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="S-SampleSection.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="S-NotationConvention.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": ["Style Guide for LDA.pdf", "Style Guide for LDA.epub"],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
