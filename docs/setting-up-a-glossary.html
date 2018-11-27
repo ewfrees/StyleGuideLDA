@@ -103,6 +103,7 @@
 <li class="chapter" data-level="4.2.1" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#chapter-1-introduction-to-loss-data-analytics"><i class="fa fa-check"></i><b>4.2.1</b> Chapter 1 Introduction to Loss Data Analytics</a></li>
 </ul></li>
 <li class="chapter" data-level="4.3" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#terms-and-chapter-first-defined"><i class="fa fa-check"></i><b>4.3</b> Terms and Chapter First Defined</a></li>
+<li class="chapter" data-level="4.4" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#feedback-and-collaboration"><i class="fa fa-check"></i><b>4.4</b> Feedback and Collaboration</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="S-NotationConvention.html"><a href="S-NotationConvention.html"><i class="fa fa-check"></i><b>5</b> Conventions for Notation</a><ul>
 <li class="chapter" data-level="5.1" data-path="S-NotationConvention.html"><a href="S-NotationConvention.html#S:General"><i class="fa fa-check"></i><b>5.1</b> General Conventions</a></li>
@@ -137,16 +138,16 @@
 <hr />
 <p>In this chapter, you learn how to:</p>
 <ul>
-<li>Setup and read csv files into R</li>
+<li>Setup csv files for a glossary</li>
 <li>List terms and definitions by chapter</li>
 <li>List terms by the chapter in which they are first defined</li>
-<li>Use GitHub receive feedback and allow collaboration</li>
+<li>Use GitHub to receive feedback and allow collaboration</li>
 </ul>
 <hr />
 <p>A glossary can serve as a quick reference when the reader needs to recall a term’s definition or location within a book. This chapter can serve as a guide to setup a glossary in the <code>R Bookdown</code> environment. Please refer <a href="https://bookdown.org/yihui/bookdown/get-started.html">here</a> for a refresher on <code>R Bookdown</code> if necessary.</p>
 <div id="csv-file-setup" class="section level2">
 <h2><span class="header-section-number">4.1</span> csv File Setup</h2>
-<p>The following include instructions on how to setup a csv file and read it into R.</p>
+<p>The following are instructions on how to setup a csv file for a glossary.</p>
 <ol style="list-style-type: decimal">
 <li>Setup an excel file with 3 columns: Term, Definition, Chapter first defined.</li>
 <li>We suggest using one excel file for all chapters for easy reference and sharing. However, you will have to save each chapter separately. Alternatively, you may use one excel file per chapter instead of having one central file then separating it.</li>
@@ -647,8 +648,25 @@ names(final.table2) &lt;- c(&quot;Term&quot;, &quot;Chapter first defined&quot;)
 
 # Generate table --&gt; do not change
 pander(distinct(final.table2, Term, .keep_all= TRUE))</code></pre>
-<p>Note that some lines of code say “do not change”. This is because theses lines of code apply to the final concatenated table which includes all the chapters. We need the concatenated table before we can sort all terms alphabetically and remove duplicates to generate the final table.</p>
-<p>Creating GitHub for collaboration - refer to HappyGit</p>
+<p>Note that some lines of code say “do not change”. This is because these lines of code apply to the concatenated table which includes all the chapters. We need the concatenated table before we can sort all terms alphabetically and remove duplicates to generate the final table.</p>
+</div>
+<div id="feedback-and-collaboration" class="section level2">
+<h2><span class="header-section-number">4.4</span> Feedback and Collaboration</h2>
+<p>This section describes how to setup a repository on GitHub so readers can make suggestions regarding terms and definitions. The repository can also allow collaboration. For example, professors can get their students to assist in compiling definitions for the glossary.</p>
+<ol style="list-style-type: decimal">
+<li>We suggest referring to <a href="http://happygitwithr.com/new-github-first.html">Happy Git</a> to get started on setting up GitHub and linking it to R Studio.</li>
+<li>Once you have done so, you can store and update your glossary project on GitHub.</li>
+<li>Through the repository, readers can create an issue to make suggestions.</li>
+</ol>
+<p>The following is an excerpt out of the glossary for Loss Data Analytics on how readers can make suggestions:</p>
+<p>When using the glossary, we encourage the reader to provide feedback regarding the terms and their definitions. For example, if the reader feels that there is a better definition for a particular term, the following instructions outline how the reader can suggest improvements.</p>
+<ul>
+<li>First, open up the issues tab on our repository on GitHub.</li>
+<li>Click on “create an issue”.</li>
+<li>Indicate which chapters you want to make changes to in the title.</li>
+<li>Specify the terms and definitions you wish to change, add or remove.</li>
+<li>Click “Submit new issue”.</li>
+</ul>
 
 </div>
 </div>

@@ -3,10 +3,10 @@
 ***
 In this chapter, you learn how to:
   
-- Setup and read csv files into R
+- Setup csv files for a glossary
 - List terms and definitions by chapter
 - List terms by the chapter in which they are first defined
-- Use GitHub receive feedback and allow collaboration
+- Use GitHub to receive feedback and allow collaboration
 
 ***
 
@@ -14,7 +14,7 @@ A glossary can serve as a quick reference when the reader needs to recall a term
 
 ## csv File Setup
 
-The following include instructions on how to setup a csv file and read it into R.
+The following are instructions on how to setup a csv file for a glossary.
 
 1. Setup an excel file with 3 columns: Term, Definition, Chapter first defined.
 2. We suggest using one excel file for all chapters for easy reference and sharing. However, you will have to save each chapter separately. Alternatively, you may use one excel file per chapter instead of having one central file then separating it.
@@ -118,9 +118,22 @@ names(final.table2) <- c("Term", "Chapter first defined")
 # Generate table --> do not change
 pander(distinct(final.table2, Term, .keep_all= TRUE))
 ```
-Note that some lines of code say "do not change".  This is because theses lines of code apply to the final concatenated table which includes all the chapters. We need the concatenated table before we can sort all terms alphabetically and remove duplicates to generate the final table. 
+Note that some lines of code say "do not change".  This is because these lines of code apply to the concatenated table which includes all the chapters. We need the concatenated table before we can sort all terms alphabetically and remove duplicates to generate the final table. 
 
-## feedback and Collabpration
+## Feedback and Collaboration
+This section describes how to setup a repository on GitHub so readers can make suggestions regarding terms and definitions. The repository can also allow collaboration. For example, professors can get their students to assist in compiling definitions for the glossary. 
 
-Creating GitHub for collaboration - refer to HappyGit
+1. We suggest referring to [Happy Git](http://happygitwithr.com/new-github-first.html) to get started on setting up GitHub and linking it to R Studio.
+2. Once you have done so, you can store and update your glossary project on GitHub. 
+3. Through the repository, readers can create an issue to make suggestions.
+
+The following is an excerpt out of the glossary for Loss Data Analytics on how readers can make suggestions:  
+
+When using the glossary, we encourage the reader to provide feedback regarding the terms and their definitions. For example, if the reader feels that there is a better definition for a particular term, the following instructions outline how the reader can suggest improvements.    
+
+* First, open up the issues tab on our repository on GitHub.
+* Click on "create an issue".
+* Indicate which chapters you want to make changes to in the title.
+* Specify the terms and definitions you wish to change, add or remove.
+* Click "Submit new issue".
 
