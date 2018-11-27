@@ -25,7 +25,7 @@
 <meta name="author" content="An open text authored by the Actuarial Community">
 
 
-<meta name="date" content="2018-11-26">
+<meta name="date" content="2018-11-27">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -103,7 +103,10 @@
 <li class="chapter" data-level="4.2.1" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#chapter-1-introduction-to-loss-data-analytics"><i class="fa fa-check"></i><b>4.2.1</b> Chapter 1 Introduction to Loss Data Analytics</a></li>
 </ul></li>
 <li class="chapter" data-level="4.3" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#terms-and-chapter-first-defined"><i class="fa fa-check"></i><b>4.3</b> Terms and Chapter First Defined</a></li>
-<li class="chapter" data-level="4.4" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#feedback-and-collaboration"><i class="fa fa-check"></i><b>4.4</b> Feedback and Collaboration</a></li>
+<li class="chapter" data-level="4.4" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#feedback-and-collaboration"><i class="fa fa-check"></i><b>4.4</b> Feedback and Collaboration</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#repository-setup-and-feedback-using-the-issue-feature"><i class="fa fa-check"></i><b>4.4.1</b> Repository Setup and Feedback using The Issue Feature</a></li>
+<li class="chapter" data-level="4.4.2" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#collaboration-through-the-fork-feature"><i class="fa fa-check"></i><b>4.4.2</b> Collaboration through The Fork Feature</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="S-NotationConvention.html"><a href="S-NotationConvention.html"><i class="fa fa-check"></i><b>5</b> Conventions for Notation</a><ul>
 <li class="chapter" data-level="5.1" data-path="S-NotationConvention.html"><a href="S-NotationConvention.html#S:General"><i class="fa fa-check"></i><b>5.1</b> General Conventions</a></li>
@@ -652,11 +655,14 @@ pander(distinct(final.table2, Term, .keep_all= TRUE))</code></pre>
 </div>
 <div id="feedback-and-collaboration" class="section level2">
 <h2><span class="header-section-number">4.4</span> Feedback and Collaboration</h2>
-<p>This section describes how to setup a repository on GitHub so readers can make suggestions regarding terms and definitions. The repository can also allow collaboration. For example, professors can get their students to assist in compiling definitions for the glossary.</p>
+<p>This section first describes how to setup a repository on GitHub so readers can make suggestions regarding terms and definitions. Then, this section describes how collaborators can contribute to the glossary on GitHub.</p>
+<div id="repository-setup-and-feedback-using-the-issue-feature" class="section level3">
+<h3><span class="header-section-number">4.4.1</span> Repository Setup and Feedback using The Issue Feature</h3>
+<p>The following are instructions on how to setup a repository on GitHub to store your glossary project. Here, we do not get into GitHub features in detail but we do suggest a place which you can refer to.</p>
 <ol style="list-style-type: decimal">
-<li>We suggest referring to <a href="http://happygitwithr.com/new-github-first.html">Happy Git</a> to get started on setting up GitHub and linking it to R Studio.</li>
-<li>Once you have done so, you can store and update your glossary project on GitHub.</li>
-<li>Through the repository, readers can create an issue to make suggestions.</li>
+<li>We suggest referring to <a href="http://happygitwithr.com/rstudio-git-github.html">Happy Git</a> to get started on setting up GitHub and linking it to R Studio.</li>
+<li>Once you have done so, you can store and update your glossary project on GitHub. Happy Git describes how you can make changes locally, commit and push the changes to GitHub.</li>
+<li>Through the repository, readers can also create an issue to make suggestions. Below are more details on this process.</li>
 </ol>
 <p>The following is an excerpt out of the glossary for Loss Data Analytics on how readers can make suggestions:</p>
 <p>When using the glossary, we encourage the reader to provide feedback regarding the terms and their definitions. For example, if the reader feels that there is a better definition for a particular term, the following instructions outline how the reader can suggest improvements.</p>
@@ -667,7 +673,13 @@ pander(distinct(final.table2, Term, .keep_all= TRUE))</code></pre>
 <li>Specify the terms and definitions you wish to change, add or remove.</li>
 <li>Click “Submit new issue”.</li>
 </ul>
+</div>
+<div id="collaboration-through-the-fork-feature" class="section level3">
+<h3><span class="header-section-number">4.4.2</span> Collaboration through The Fork Feature</h3>
+<p>Aside from readers, collaborators can also contribute to the glossary. For example, professors can get their students to assist in compiling definitions.</p>
+<p>Collaborators can setup their own GitHub accounts. They can fork the project, make changes locally and make a pull request. The project owner can then merge these changes to update the project. These processes are outlined on <a href="http://happygitwithr.com/fork.html">Happy Git</a> as well.</p>
 
+</div>
 </div>
 </div>
             </section>

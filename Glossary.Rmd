@@ -121,11 +121,14 @@ pander(distinct(final.table2, Term, .keep_all= TRUE))
 Note that some lines of code say "do not change".  This is because these lines of code apply to the concatenated table which includes all the chapters. We need the concatenated table before we can sort all terms alphabetically and remove duplicates to generate the final table. 
 
 ## Feedback and Collaboration
-This section describes how to setup a repository on GitHub so readers can make suggestions regarding terms and definitions. The repository can also allow collaboration. For example, professors can get their students to assist in compiling definitions for the glossary. 
+This section first describes how to setup a repository on GitHub so readers can make suggestions regarding terms and definitions. Then, this section describes how collaborators can contribute to the glossary on GitHub. 
 
-1. We suggest referring to [Happy Git](http://happygitwithr.com/new-github-first.html) to get started on setting up GitHub and linking it to R Studio.
-2. Once you have done so, you can store and update your glossary project on GitHub. 
-3. Through the repository, readers can create an issue to make suggestions.
+### Repository Setup and Feedback using The Issue Feature 
+The following are instructions on how to setup a repository on GitHub to store your glossary project. Here, we do not get into GitHub features in detail but we do suggest a place which you can refer to. 
+
+1. We suggest referring to [Happy Git](http://happygitwithr.com/rstudio-git-github.html) to get started on setting up GitHub and linking it to R Studio.
+2. Once you have done so, you can store and update your glossary project on GitHub. Happy Git describes how you can make changes locally, commit and push the changes to GitHub.
+3. Through the repository, readers can also create an issue to make suggestions. Below are more details on this process.
 
 The following is an excerpt out of the glossary for Loss Data Analytics on how readers can make suggestions:  
 
@@ -136,4 +139,9 @@ When using the glossary, we encourage the reader to provide feedback regarding t
 * Indicate which chapters you want to make changes to in the title.
 * Specify the terms and definitions you wish to change, add or remove.
 * Click "Submit new issue".
+
+### Collaboration through The Fork Feature
+Aside from readers, collaborators can also contribute to the glossary. For example, professors can get their students to assist in compiling definitions. 
+
+Collaborators can setup their own GitHub accounts. They can fork the project, make changes locally and make a pull request. The project owner can then merge these changes to update the project. These processes are outlined on [Happy Git](http://happygitwithr.com/fork.html) as well.
 
