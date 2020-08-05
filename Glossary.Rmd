@@ -1,0 +1,167 @@
+# Setting up a Glossary
+
+***
+In this chapter, you learn how to:
+  
+- Setup csv files for a glossary
+- List terms and definitions by chapter
+- List terms by the chapter in which they are first defined
+- Use GitHub to store the project, make changes, seek feedback and facilitate collaboration
+
+***
+
+A glossary can serve as a quick reference when the reader needs to recall a term’s definition or location within a book. This chapter can serve as a guide to setup a glossary in the `R Bookdown` environment. Please refer [here](https://bookdown.org/yihui/bookdown/get-started.html) for a refresher on `R Bookdown` if necessary.
+
+## csv File Setup
+
+The following outlines how we currently store our glossary:
+
+1. Setup an excel file with 3 columns: Term, Definition, Chapter first defined.
+2. We suggest using one excel file for all chapters for easy reference and sharing. However, you will have to save each chapter separately. Alternatively, you may use one excel file per chapter instead of having one central file then separating it.
+3. Save the Excel file as a csv file.
+4. Please note that if you make changes, do so in the Excel file not the csv file.
+
+## Terms and Definitions by Chapter
+
+This section describes how to create a list of important terms and their definitions listed according to the chapters in which they are found. 
+
+We use an example from the glossary of Loss Data Analytics. First we display the list of terms and definitions for Chapter 1 of the book followed by the code used to generate it.
+
+```{r setupGlossary, include=FALSE}
+knitr::opts_chunk$set(comment = NA, echo = FALSE, message = FALSE)
+```
+
+### Chapter 1 Introduction to Loss Data Analytics
+
+```{r}
+library(pander)
+chapter1 <- read.csv("~/R project/StyleGuideLDA/csv/Chapter1.csv", header=TRUE,
+                       na.strings=c("."), stringsAsFactors=FALSE)
+table1.1 <- cbind(chapter1[, 1], chapter1[, 2])
+final.table1.1 <- as.data.frame(table1.1)
+names(final.table1.1) <- c("Term", "Definition")
+pander(final.table1.1)
+```
+
+
+Here is the code used for producing the list of terms and definitions:
+
+```
+### Chapter 1 Introduction to Loss Data Analytics
+
+{r}
+library(pander)
+chapter1 <- read.csv("~/R project/StyleGuideLDA/csv/Chapter1.csv", header=TRUE,
+                       na.strings=c("."), stringsAsFactors=FALSE)
+table1.1 <- cbind(chapter1[, 1], chapter1[, 2])
+final.table1.1 <- as.data.frame(table1.1)
+names(final.table1.1) <- c("Term", "Definition")
+pander(final.table1.1)
+
+```
+
+## Terms and Chapter First Defined
+
+This section describes how to create a list of terms by the chapter in which they are first defined. Certain terms are defined multiple times throughout the book, so this list can help the reader refer to the chapter in which a term is first used and defined. The terms listed here are sorted in alphabetical order.
+
+We use an example from the glossary of Loss Data Analytics. Here, we use Chapter 1 and Chapter 2 of the book. We display the list of terms by chapter first defined then show the code used to generate it.
+
+```{r results='hide'}
+chapter2 <- read.csv("~/R project/StyleGuideLDA/csv/Chapter2.csv", header=TRUE,
+                       na.strings=c("."), stringsAsFactors=FALSE)
+```
+
+
+```{r}
+# Chapter 1
+table2.1 <- cbind(chapter1[, 1], chapter1[, 3])
+
+# Chapter 2
+table2.2 <- cbind(chapter2[, 1], chapter2[, 3])
+
+# Concatenate tables
+table2 <- rbind(table2.1, table2.2)
+
+# Sort alphabetically --> do not change
+sort.table2 <- table2[order(table2[,1]), ] 
+
+# Remove duplicates --> do not change
+library(dplyr)
+final.table2 <- as.data.frame(sort.table2)
+names(final.table2) <- c("Term", "Chapter first defined")
+
+# Generate table --> do not change
+pander(distinct(final.table2, Term, .keep_all= TRUE))
+```
+
+Here is the code used for producing the list of terms by chapter first defined:
+
+```
+{r}
+# Chapter 1
+table2.1 <- cbind(chapter1[, 1], chapter1[, 3])
+
+# Chapter 2
+table2.2 <- cbind(chapter2[, 1], chapter2[, 3])
+
+# Concatenate tables
+table2 <- rbind(table2.1, table2.2)
+
+# Sort alphabetically --> do not change
+sort.table2 <- table2[order(table2[,1]), ] 
+
+# Remove duplicates --> do not change
+library(dplyr)
+final.table2 <- as.data.frame(sort.table2)
+names(final.table2) <- c("Term", "Chapter first defined")
+
+# Generate table --> do not change
+pander(distinct(final.table2, Term, .keep_all= TRUE))
+```
+Note that some lines of code say "do not change".  This is because these lines of code apply to the concatenated table which includes all the chapters. We need the concatenated table before we can sort all terms alphabetically and remove duplicates to generate the final table. 
+
+## Glossary on GitHub 
+This section describes how to setup a glossary repository on GitHub. By doing so, users can store the project, make changes, seek feedback and facilitate collaboration. We include suggestions for these different types of users:
+
+* someone who wants to do a book like ours
+* the reviewer/reader who simply wants to suggest altering or adding a definition
+* a contributing author who needs to compile a csv file of definitions and include them into the chapter using tooltip
+
+### Repository Creation to Supplement a Book
+The following are suggestions on how to setup a repository on GitHub to store your glossary project. Here, we do not get into GitHub features in detail but we do suggest a place which you can refer to. 
+
+1. We suggest referring to [Happy Git](http://happygitwithr.com/rstudio-git-github.html) to get started on setting up GitHub and linking it to R Studio.
+2. Once you have done so, you can store and update your glossary project on GitHub. Happy Git describes how you can make changes locally, commit and push the changes to GitHub.
+
+### Feedback from Reviewers/ Readers
+We assume that the author already has a glossary repository on GitHub in order to use the issue feature to receive feedback. The following is an excerpt out of the glossary for Loss Data Analytics on how readers can make suggestions:  
+
+When using the glossary, we encourage the reader to provide feedback regarding the terms and their definitions. For example, if the reader feels that there is a better definition for a particular term, the following instructions outline how the reader can suggest improvements.    
+
+* First, open up the issues tab on our repository on GitHub.
+* Click on "create an issue".
+* Indicate which chapters you want to make changes to in the title.
+* Specify the terms and definitions you wish to change, add or remove.
+* Click "Submit new issue".
+
+### Collaboration from Authors
+
+#### Definitions Compilation
+Aside from readers, collaborators can also contribute to the glossary. For example, professors can get authors to assist in compiling definitions. 
+
+Collaborators can setup their own GitHub accounts. They can fork the project, make changes locally and make a pull request. The project owner can then merge these changes to update the project. These processes are outlined on [Happy Git](http://happygitwithr.com/fork.html) as well.
+
+As mentioned previously, we suggest compiling definitions in the Excel file instead of csv. This is because making changes directly to the csv file may result in space distortions in the R output of the glossary. 
+
+#### Definitions in-text using `Tooltip`
+Further, in Loss Data Analytics, we use `tooltip` which allows readers to hover over a word in the text so that they may receive the definition as in the following example from the introduction chapter: 
+
+When introducing data methods, we will focus on losses that arise from obligations in insurance contracts. This could be the amount of damage to one's apartment under a renter's insurance agreement, the amount needed to compensate someone that you hurt in a driving accident, and the like. We  call these obligations <a href="#" class="tooltip" style="color:green">*insurance claims*<span style="font-size:8pt"> An insurance claim is the compensation provided by the insurer for incurred hurt, loss, or damage that is covered by the policy.</span></a>. With this focus, we will be able to introduce generally applicable statistical tools and techniques in real-life situations.
+
+The following is the `tooltip` code associated with the above output:
+
+```
+<a href="#" class="tooltip" style="color:green">*insurance claims*<span style="font-size:8pt"> An insurance claim is the compensation provided by the insurer for incurred hurt, loss, or damage that is covered by the policy.</span></a>.
+```  
+Note that our version of `tooltip` is customized within our style.css file. If you prefer another style, you will have to modify the code or replace the style.css file to suit your needs.
+
