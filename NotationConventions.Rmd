@@ -29,12 +29,10 @@ cdf & \text{cumulative distribution function} \\
 df & \text{degrees of freedom} \\
 iid & \text{independent and identically distributed} \\
 glm & \text{generalized linear model} \\
-mle & \text{maximum likelihood estimate}\\
+mle & \text{maximum likelihood estimate/estimator}\\
 ols & \text{ordinary least squares} \\
 pdf & \text{probability density function} \\
-pf  & \text{probability  function} \\
-pmf & \text{probability mass function} \\
-rv & \text{random variable} \\ \hline
+pmf & \text{probability mass function} \\ \hline
 \end{array}
 $$
 

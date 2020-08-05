@@ -35,7 +35,7 @@ knitr::opts_chunk$set(comment = NA, echo = FALSE, message = FALSE)
 
 ```{r}
 library(pander)
-chapter1 <- read.csv("~/R project/StyleGuideLDA/csv/Chapter1.csv", header=TRUE,
+chapter1 <- read.csv("csv/Chapter1.csv", header=TRUE,
                        na.strings=c("."), stringsAsFactors=FALSE)
 table1.1 <- cbind(chapter1[, 1], chapter1[, 2])
 final.table1.1 <- as.data.frame(table1.1)
@@ -51,7 +51,7 @@ Here is the code used for producing the list of terms and definitions:
 
 {r}
 library(pander)
-chapter1 <- read.csv("~/R project/StyleGuideLDA/csv/Chapter1.csv", header=TRUE,
+chapter1 <- read.csv("csv/Chapter1.csv", header=TRUE,
                        na.strings=c("."), stringsAsFactors=FALSE)
 table1.1 <- cbind(chapter1[, 1], chapter1[, 2])
 final.table1.1 <- as.data.frame(table1.1)
@@ -67,7 +67,7 @@ This section describes how to create a list of terms by the chapter in which the
 We use an example from the glossary of Loss Data Analytics. Here, we use Chapter 1 and Chapter 2 of the book. We display the list of terms by chapter first defined then show the code used to generate it.
 
 ```{r results='hide'}
-chapter2 <- read.csv("~/R project/StyleGuideLDA/csv/Chapter2.csv", header=TRUE,
+chapter2 <- read.csv("csv/Chapter2.csv", header=TRUE,
                        na.strings=c("."), stringsAsFactors=FALSE)
 ```
 
