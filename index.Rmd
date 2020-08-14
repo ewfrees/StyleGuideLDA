@@ -9,6 +9,11 @@ biblio-style: apalike
 link-citations: yes
 description: "This is a style guide to help authors write chapters for Loss Data Analytics"
 ---
+
+```{r setup, include = FALSE}
+options(bookdown.render.file.scope = FALSE)
+```
+
 # Preface {-}
 
 It is important for chapters in the *Open Actuarial Textbooks* project to have a consistent look and feel. The *Style Guide for Loss Data Analytics* aims to assist contributors in developing chapters consistently throughout the *Loss Data Analytics* book. 

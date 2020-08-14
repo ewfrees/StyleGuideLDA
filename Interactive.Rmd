@@ -6,7 +6,7 @@ An advantage of publishing on the web is that we can produce an online version t
 We want viewers to interact with the book; it is **not** written to accommodate the “armchair reader,” that is, one who passively reads and does not get involved by attempting the exercises in the text. Consider an analogy to sports; there is a great deal that you can learn about the game just by watching. However, if you want to sharpen your skills, then you have to go out and play the game. 
 
 
-##Examples and Exercises
+## Examples and Exercises
 
 Even for traditional offline (pdf) version of the book, we include problems that allow readers to develop their learning.
 
@@ -20,7 +20,7 @@ We anticipate that substantial exercise banks will be built over time by users, 
 
 Examples and exercises are designed so that they illustrate a general analytics/statistical concept; they have the additional advantage in that they are often based on actuarial professional examinations and so provide readers with training for these assessment frameworks. Notably, *in the online version of the book, the solutions to the examples and exercises are hidden to encourage readers to actively solve (or at least consider) prior to revealing a solution.*
 
-##Statistical Code
+## Statistical Code
 
 However, the limitation of exercise and examples done by hand is that they give **little insight** as to how the general analytics/statistical concepts can be used in applications or why more extensive treatments beyond the foundations would be needed. To address these limitations, throughout we include illustrate statistical code with sample (but real) datasets. The statistical language used throughout is `R`. For two reasons, the `R` code is hidden in the online version but can be interactively revealed but clicking a button. 
 
@@ -30,7 +30,7 @@ However, the limitation of exercise and examples done by hand is that they give 
 Although we do not focus on developing `R` tutorials, we will provide guides and links to people who wish to learn `R`. Our focus is on teaching statistical methods and actuarial issues, not software. Over time, the project may also provide support for users of other software environments, such as Microsoft's Excel or Python.
 
   
-##Other Interactive Features
+## Other Interactive Features
 
 A wonderful aspect of an online text is that we can readily incorporate other interactive features. In coming versions of the book, you can expect to see 
 
