@@ -10,7 +10,7 @@ bookdown::gitbook:
       before: |
         <li><a href="./">A Style Guide for LDA</a></li>
       after: |
-        <li><a href="https://github.com/OpenActTexts/StyleGuideLDA" target="blank">Published with bookdown</a></li>
+        <li><a href="https://github.com/OpenActTexts/StyleGuideLDA" target="blank">Style Guide for LDA on GitHub</a></li>
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:
